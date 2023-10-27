@@ -1,5 +1,6 @@
 <div class="example-container">
     <div class="form-container">
+        <p>Basic Information</p>
         <mat-form-field>
             <mat-label>First Name</mat-label>
             <input matInput>
@@ -22,11 +23,75 @@
           </mat-form-field>
           <mat-form-field>
             <mat-label>Email</mat-label>
-            <input matInput>
+            <input matInput type="email">
           </mat-form-field>
     </div>
-    <div class="form-field">
-        
+    <div class="form-container">
+        <p>Work Information</p>
+        <mat-form-field>
+            <mat-label>Department</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Designation</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Role</mat-label>
+            <mat-select>
+                <mat-option >
+                </mat-option>
+              </mat-select>
+            <!-- <mat-select>
+                <mat-option *ngFor="let food of foods" [value]="food.value">
+                  {{food.viewValue}}
+                </mat-option>
+              </mat-select> -->
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Location</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Employment Type</mat-label>
+            <mat-select>
+                <mat-option >
+                </mat-option>
+              </mat-select>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Employment Status</mat-label>
+            <mat-select>
+                <mat-option >
+                </mat-option>
+              </mat-select>
+          </mat-form-field>
+    </div>
+    <div class="form-container">
+        <p>Joining Information</p>
+        <mat-form-field>
+            <mat-label>Joining Source</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field [style.width.px]=200>
+            <mat-label>JoiningDate</mat-label>
+            <input matInput [matDatepicker]="picker">
+  <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Hiring Person</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Current Experience</mat-label>
+            <input matInput type="number">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Total Experience</mat-label>
+            <input matInput type="number">
+          </mat-form-field>
+         
     </div>
   <!-- <mat-form-field>
     <mat-label>Select</mat-label>
