@@ -21,7 +21,7 @@ export class ProfileComponent {
       complete() {
         console.log("is completed");
       },
-    });;
+    });
     console.log(data);
   }
 }
